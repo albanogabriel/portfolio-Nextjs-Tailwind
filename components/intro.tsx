@@ -50,8 +50,8 @@ export default function Intro() {
 
       <motion.p 
         className="text-center mb-10 mt-4 px-4 text-2xl font-light !leading-[1.7] sm:text-xl"
-        initial={{ opacity: 0, y:100}}
-        animate={{ opacity:1, y:0 }}
+        initial={{ opacity: 0, y: 100}}
+        animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Olá! me chamo Gabriel.</span> Sou iniciante no <span className="font-bold">Desenvolvimento Front-end</span><br/>
         
@@ -70,21 +70,28 @@ export default function Intro() {
           delay: 0.1
         }}
         >
+
         <Link 
           href="#contact"
           className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full
-          outline-none focus:scale-110"
-        >
-          Me contate aqui <BsArrowRight />
+          outline-none focus:scale-110 hover:scale-110 active:scale-105 hover:bg-indigo-600 transition"
+        > Me contate aqui <BsArrowRight />
+          
         </Link>
-        <a className="bg-white text-gray-600 px-7 py-3 flex items-center gap-2 rounded-full"> 
-        Download CV <HiDownload /></a>
-        <a className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full">
+        <a className="group bg-white text-gray-600 px-7 py-3 flex items-center gap-2 rounded-full
+          outline-none focus:scale-110 hover:scale-110 active:scale-105 transition
+        "> Download CV <HiDownload className="opacity-60 group-hover:translate-y-2 transition" /></a>
+
+        <a className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition">
           <BsLinkedin/>
         </a>
-        <a className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.2rem] rounded-full">
+
+        <a className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.2rem] rounded-full
+          outline-none focus:scale-110 hover:scale-110 active:scale-105 transition
+        ">
           <FaGithub/>
         </a>
+
       </motion.div>
 
     </section>
