@@ -2,10 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import atriumCase from "/atrium-case.jpg"
-import disneyCase from "/disney-case.jpg";
-import ebacCase from "/ebac-case.jpg";
-
+import atriumCase from '@/public/atrium-case.jpg';
+import disneyCase from '@/public/disney-case.jpg';
+import ebacCase from '@/public/ebac-case.jpg';
 export const links = [
   {
     name: "Home",
