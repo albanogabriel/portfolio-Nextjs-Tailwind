@@ -8,7 +8,11 @@ const nextConfig = {
 
             }
         ]
-    }
+    },
+    webpack: (config) => {
+        config.resolve.alias['@'] = path.join(__dirname, 'public');
+        return config;
+    },
 }
 
 module.exports = nextConfig
