@@ -71,27 +71,35 @@ export default function Intro() {
         }}
         >
 
-        <Link 
-          href="https://bit.ly/3QKhXU0" target="_blank"
+        <Link  
           className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full
           outline-none focus:scale-110 hover:scale-110 active:scale-105 hover:bg-indigo-600 transition"
-          
+          href="https://bit.ly/3QKhXU0" target="_blank"
         > Me contate aqui <BsArrowRight />
           
         </Link>
-        <a className="group bg-white text-gray-600 px-7 py-3 flex items-center gap-2 rounded-full
+        
+        <a 
+          className="group bg-white text-gray-600 px-7 py-3 flex items-center gap-2 rounded-full
           outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
           href="https://docs.google.com/document/d/1EoO4NyKV-_W4P3hVuKSCVHJFE_bVZlRCiJ7BzlVxKNc/edit?usp=sharing" target="_blank" download={false}
           >
             Link CV <HiDownload className="opacity-60 group-hover:translate-y-2 transition" /></a>
 
-        <a className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition">
+        <a 
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition"
+          href="https://linkedin.com/in/albanogabriel"
+          target="_blank"
+          >
           <BsLinkedin/>
         </a>
 
-        <a className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.2rem] rounded-full
-          outline-none focus:scale-110 hover:scale-110 active:scale-105 transition
-        ">
+        <a 
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.2rem] rounded-full
+          outline-none focus:scale-110 hover:scale-110 active:scale-105 transition"
+          href="https://github.com/albanogabriel?tab=repositories"
+          target="_blank"
+          >
           <FaGithub/>
         </a>
 
