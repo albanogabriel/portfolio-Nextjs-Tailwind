@@ -42,13 +42,10 @@ export default function Intro() {
               duration: 0.7
             }}
           >👻</motion.span>
-
-
-
         </div>
       </div>
 
-      <motion.p 
+      <motion.h1 
         className="text-center mb-10 mt-4 px-4 text-2xl font-light !leading-[1.7] sm:text-xl"
         initial={{ opacity: 0, y: 100}}
         animate={{ opacity: 1, y: 0 }}
@@ -60,7 +57,7 @@ export default function Intro() {
         <span className="font-light">Sou formado em Publicidade Propaganda e estou na 3º Fase de Análise e Desenvolvimento de Sistemas.</span> {' '} <br/> 
 
         <span>Meu foco é <span className="font-bold underline"> React <span className="font-light">(Next.js)</span></span></span>
-      </motion.p>
+      </motion.h1>
 
       <motion.div 
         className="flex flex-col text-lg sm:flex-row sm:text-base items-center justify-center gap-3 px-4  font-medium"
@@ -78,7 +75,7 @@ export default function Intro() {
         > Me contate aqui <BsArrowRight />
           
         </Link>
-        
+
         <a 
           className="group bg-white text-gray-600 px-7 py-3 flex items-center gap-2 rounded-full
           outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
