@@ -1,17 +1,17 @@
 /** @type {import('next').NextConfig} */
-const path = require('path');
-
-module.exports = {
-  webpack: (config) => {
-    config.resolve.alias['@'] = path.resolve(__dirname, './');
-    return config;
-  },
+const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'avatars.githubusercontent.com',
+        protocol: "https",
+        hostname: "images.unsplash.com",
       },
+      {
+        protocol: "https",
+        hostname: "avatars.githubusercontent.com",
+      }
     ],
   },
 };
+
+module.exports = nextConfig;
